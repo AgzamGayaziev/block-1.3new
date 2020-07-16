@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="telo">
-<nav class="menu-navigation">
+<nav class="menu-navigation hide-for-1120px">
 	<a href="" class="menu-navigation__button-other">
 	<img src="img/button-other/burger.svg" class="menu-navigation__pic-other" alt="другое">
 	</a>
@@ -47,19 +47,43 @@
 	<img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-search" alt="поиск">
 	</a>
 </nav>
+
 <article class="main-content">
 <div class="heading">
 <img src="img/heading-design/highlight.svg" alt="">
 <h1 class="heading__services">Услуги и сервисы</h1>
 </div>
+
+<nav class="menu-navigation-for-1120 hide-for-320px hide-for-784px">
+	<span>Оставить заявку</span>
+	<a href="" class="menu-navigation-for-1120__button-kit">
+		<img src="img/kit-button/repair.svg" class="menu-navigation__pic-kit" alt="инструменты">
+	</a>
+	<span>Статус ремонта</span>
+	<a href="" class="menu-navigation-for-1120__button-search">
+		<img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-search" alt="поиск">
+	</a>
+</nav>
+
 <div class="select">
-<button class="select__button">
+<button class="select__button" autofocus>
 	<span class="select__part">Ремонтные устройства</span>
 </button>
 <button class="select__button">
 	<span class="select__part">Дополнительные услуги</span>
 </button>
-
+	<button class="select__button">
+		<span class="select__part">Цены на услуги</span>
+	</button>
+	<button class="select__button">
+		<span class="select__part">Адреса сервисных центров</span>
+	</button>
+	<button class="select__button">
+		<span class="select__part">Специальные цены</span>
+	</button>
+	<button class="select__button">
+		<span class="select__part">Отзывы</span>
+	</button>
 </div>
 <article class="main-content__discription">
 <p>
@@ -69,15 +93,17 @@ Dell. Только у нас вы можете
 отремонтировать свой ноутбук Dell с
 официальной гарантией производителя. 
 </p>
-<p class="hide-for-320px">Мы успешно работаем с 1992 года и
-		заслужили репутацию надежного партнера</p>
+<p class="main-content__paragraph2 hide-for-320px">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+</p>
+	<button class="main-content__button-more">
+		<img src="img/read-more/icon.svg" alt="">
+		<span class="main-content__read-more">Читать далее</span>
+	</button>
 </article>
-<button class="main-content__button-more">
-<img src="img/read-more/icon.svg" alt="">
-<span class="main-content__read-more">Читать далее</span>	
-</button>
+
 
 <img class="main-content__photo" src="img/content-jpeg/_MG_3223.jpg" alt="фото логотипа и расписание">
-
+</article>
 </body>
 </html>
