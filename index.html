@@ -3,58 +3,69 @@
 <head>
 	<title>Блок 1.3</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=320, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="telo">
-<nav class="menu-navigation hide-for-1120px">
-	<a href="" class="menu-navigation__button-other">
-	<img src="img/button-other/burger.svg" class="menu-navigation__pic-other" alt="другое">
-	</a>
-	
-	<img class="hide-for-320px" src="img/divider/divider.svg" alt="">
+<body class="body">
+<header>
+ <nav class="navigation">
+	 <ul class="navigation__list">
+	   <div class="navigation__menu">
+		 <li class="navigation__item">
+			 <button class="navigation__button">
+				 <img src="img/button-other/burger.svg" class="menu-navigation__pic-other" alt="другое">
+			 </button>
+		 </li>
+	   </div>
+		<div class="navigation__logo">
+		 <li class="navigation__item">
+			<a href="" class="menu-navigation__logo">
+				<img src="img/logo/Group.svg" class="menu-navigation__pic-logo" alt="логотип компании">
+			</a>
+		 </li>
+		</div>
+		<div class="navigation__feedback">
+		 <li class="navigation__item">
+			<a href="tel:+1234567890" class="menu-navigation__button-call ">
+				<img src="img/call-button/call.svg" class="menu-navigation__pic-call" alt="другое">
+			</a>
+		 </li>
 
+		 <li class="navigation__item">
+			<a href="" class="menu-navigation__button-chat ">
+				<img src="img/chat-button/chat.svg" class="menu-navigation__pic-chat" alt="другое">
+			</a>
+		 </li>
 
-	<a href="" class="menu-navigation__logo">
-	<img src="img/logo/Group.svg" class="menu-navigation__pic-logo" alt="логотип компании">
-	</a>
+		 <li class="navigation__item">
+			<a href="" class="menu-navigation__button-profile ">
+				<img src="img/profile-button/profile.svg" class="menu-navigation__pic-profile" alt="другое">
+			</a>
+		 </li>
+		</div>
+		 <div class="navigation__support">
+		 	<li class="navigation__item">
+				<button class="navigation__button">
+					<img src="img/kit-button/repair.svg" class="menu-navigation__pic-kit" alt="инструменты">
+				</button>
+		 	</li>
 
-	<div class="pusher hide-for-320px"></div>
-
-    <div class="menu-navigator__divider">
-    	<img class="hide-for-784px" src="img/divider/divider.svg" alt="">
-    </div>
-    
-    <a href="" class="menu-navigation__button-call hide-for-320px">
-	<img src="img/call-button/call.svg" class="menu-navigation__pic-call" alt="другое">
-	</a>
-
-	<a href="" class="menu-navigation__button-chat hide-for-320px">
-		<img src="img/chat-button/chat.svg" class="menu-navigation__pic-chat" alt="другое">
-	</a>
-
-	<a href="" class="menu-navigation__button-profile hide-for-320px">
-		<img src="img/profile-button/profile.svg" class="menu-navigation__pic-profile" alt="другое">
-	</a>
-
-	<img class="hide-for-320px" src="img/divider/divider.svg" alt="">
-
-	<a href="" class="menu-navigation__button-kit">
-	<img src="img/kit-button/repair.svg" class="menu-navigation__pic-kit" alt="инструменты">
-	</a>
-	
-	<a href="" class="menu-navigation__button-search">
-	<img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-search" alt="поиск">
-	</a>
-</nav>
-
+			 <li class="navigation__item">
+				<button class="navigation__button">
+					<img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-search" alt="поиск">
+				</button>
+	     	</li>
+		 </div>
+	 </ul>
+ </nav>
+</header>
 <article class="main-content">
-<div class="heading">
-<img src="img/heading-design/highlight.svg" alt="">
-<h1 class="heading__services">Услуги и сервисы</h1>
-</div>
+	<div class="heading">
+		<img src="img/heading-design/highlight.svg" alt="">
+		<h1 class="heading__services">Услуги и сервисы</h1>
+	</div>
 
-<nav class="menu-navigation-for-1120 hide-for-320px hide-for-784px">
+<nav class="menu-navigation-for-1120">
 	<span>Оставить заявку</span>
 	<a href="" class="menu-navigation-for-1120__button-kit">
 		<img src="img/kit-button/repair.svg" class="menu-navigation__pic-kit" alt="инструменты">
@@ -86,14 +97,14 @@
 	</button>
 </div>
 <article class="main-content__discription">
-<p>
+<p class="main-content__paragraph1">
 Мы являемся авторизованным
 сервисным центром по ремонту техники
 Dell. Только у нас вы можете
 отремонтировать свой ноутбук Dell с
 официальной гарантией производителя. 
 </p>
-<p class="main-content__paragraph2 hide-for-320px">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+<p class="main-content__paragraph2 ">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
 , что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
 </p>
 	<button class="main-content__button-more">
