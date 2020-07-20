@@ -10,111 +10,127 @@
 <header>
  <nav class="navigation">
 	 <ul class="navigation__list">
-	   <div class="navigation__menu">
+	   <li class="navigation__item">
+		 <ul class="navigation__menu">
 		 <li class="navigation__item">
 			 <button class="navigation__button">
 				 <img src="img/button-other/burger.svg" class="menu-navigation__pic-other" alt="другое">
 			 </button>
 		 </li>
-	   </div>
-		<div class="navigation__logo">
+		 </ul>
+	   </li>
 		 <li class="navigation__item">
-			<a href="" class="menu-navigation__logo">
-				<img src="img/logo/Group.svg" class="menu-navigation__pic-logo" alt="логотип компании">
-			</a>
+			<ul class="navigation__logo">
+		 		<li class="navigation__item">
+					<link href="#" class="menu-navigation__logo">
+						<img src="img/logo/Group.svg" class="menu-navigation__pic-logo" alt="логотип компании">
+					</link>
+		 		</li>
+			</ul>
 		 </li>
-		</div>
-		<div class="navigation__feedback">
-		 <li class="navigation__item">
-			<a href="tel:+1234567890" class="menu-navigation__button-call ">
-				<img src="img/call-button/call.svg" class="menu-navigation__pic-call" alt="другое">
-			</a>
-		 </li>
+		 <li class="navigation__item navigation__item_feedback-margin-left">
+			<ul class="navigation__feedback">
+		 		<li class="navigation__item">
+					<a href="tel:+1234567890" class="menu-navigation__button-call ">
+						<img src="img/call-button/call.svg" class="menu-navigation__pic-call" alt="другое">
+					</a>
+				</li>
 
-		 <li class="navigation__item">
-			<a href="" class="menu-navigation__button-chat ">
-				<img src="img/chat-button/chat.svg" class="menu-navigation__pic-chat" alt="другое">
-			</a>
-		 </li>
+		 		<li class="navigation__item">
+					<a href="mailto:somemail@gmail.com" class="menu-navigation__button-mail ">
+						<img src="img/chat-button/chat.svg" class="menu-navigation__pic-mail" alt="другое">
+					</a>
+		 		</li>
 
-		 <li class="navigation__item">
-			<a href="" class="menu-navigation__button-profile ">
-				<img src="img/profile-button/profile.svg" class="menu-navigation__pic-profile" alt="другое">
-			</a>
+		 		<li class="navigation__item">
+					<a href="" class="menu-navigation__button-profile ">
+						<img src="img/profile-button/profile.svg" class="menu-navigation__pic-profile" alt="другое">
+					</a>
+		 		</li>
+			</ul>
 		 </li>
-		</div>
-		 <div class="navigation__support">
-		 	<li class="navigation__item">
-				<button class="navigation__button">
-					<img src="img/kit-button/repair.svg" class="menu-navigation__pic-kit" alt="инструменты">
-				</button>
-		 	</li>
+		 <li class="navigation__item navigation__item_support-margin-left">
+			 <ul class="navigation__support">
+		 		<li class="navigation__item">
+					<span class="navigation__name-button">Оставить заявку</span>
+					<button class="navigation__button">
+						<img src="img/kit-button/repair.svg" class="menu-navigation__pic-kit" alt="инструменты">
+					</button>
+		 		</li>
 
-			 <li class="navigation__item">
-				<button class="navigation__button">
-					<img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-search" alt="поиск">
-				</button>
-	     	</li>
-		 </div>
+			 	<li class="navigation__item">
+					<span class="navigation__name-button">Статус ремонта</span>
+					<button class="navigation__button">
+						<img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-search" alt="поиск">
+					</button>
+	     		</li>
+			 </ul>
+		 </li>
 	 </ul>
  </nav>
 </header>
-<article class="main-content">
-	<div class="heading">
-		<img src="img/heading-design/highlight.svg" alt="">
-		<h1 class="heading__services">Услуги и сервисы</h1>
+<main class="main">
+	<div class="title">
+		<h1 class="title__services">Услуги и сервисы</h1>
 	</div>
 
-<nav class="menu-navigation-for-1120">
-	<span>Оставить заявку</span>
-	<a href="" class="menu-navigation-for-1120__button-kit">
-		<img src="img/kit-button/repair.svg" class="menu-navigation__pic-kit" alt="инструменты">
-	</a>
-	<span>Статус ремонта</span>
-	<a href="" class="menu-navigation-for-1120__button-search">
-		<img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-search" alt="поиск">
-	</a>
-</nav>
+	<div class="main__navigation">
+		<ul class="main__navigation-list">
+			<li class="navigation__item">
+				<a href="#" class="select__button" autofocus>
+					<span class="select__part">Ремонтные устройства</span>
+				</a>
+			</li>
+			<li class="navigation__item">
+				<a href="#" class="select__button">
+					<span class="select__part">Дополнительные услуги</span>
+				</a>
+			</li>
+			<li class="navigation__item">
+				<a href="#" class="select__button">
+					<span class="select__part">Адреса сервисных центров</span>
+				</a>
+			</li>
+			<li class="navigation__item">
+				<a href="#" class="select__button">
+					<span class="select__part">Цены на услуги</span>
+				</a>
+			</li>
+			<li class="navigation__item">
+				<a href="#" class="select__button">
+					<span class="select__part">Специальные цены</span>
+				</a>
+			</li>
+			<li class="navigation__item">
+				<a href="#" class="select__button">
+					<span class="select__part">Отзывы</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<article class="main-content__discription">
+		<section class="main-content__text-discription">
+			<p class="main-content__paragraph1">
+				Мы являемся авторизованным
+				сервисным центром по ремонту техники
+				Dell. Только у нас вы можете
+				отремонтировать свой ноутбук Dell с
+				официальной гарантией производителя.
+			</p>
+			<p class="main-content__paragraph2 ">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+				, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
+				в свою очередь, советуют нас родным и близким.
+			</p>
+		</section>
+		<button class="main-content__button-more">
+			<img src="img/read-more/icon.svg" alt="">
+			<span class="main-content__read-more">Читать далее</span>
+		</button>
+	</article>
 
-<div class="select">
-<button class="select__button" autofocus>
-	<span class="select__part">Ремонтные устройства</span>
-</button>
-<button class="select__button">
-	<span class="select__part">Дополнительные услуги</span>
-</button>
-	<button class="select__button">
-		<span class="select__part">Цены на услуги</span>
-	</button>
-	<button class="select__button">
-		<span class="select__part">Адреса сервисных центров</span>
-	</button>
-	<button class="select__button">
-		<span class="select__part">Специальные цены</span>
-	</button>
-	<button class="select__button">
-		<span class="select__part">Отзывы</span>
-	</button>
-</div>
-<article class="main-content__discription">
-<p class="main-content__paragraph1">
-Мы являемся авторизованным
-сервисным центром по ремонту техники
-Dell. Только у нас вы можете
-отремонтировать свой ноутбук Dell с
-официальной гарантией производителя. 
-</p>
-<p class="main-content__paragraph2 ">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-</p>
-	<button class="main-content__button-more">
-		<img src="img/read-more/icon.svg" alt="">
-		<span class="main-content__read-more">Читать далее</span>
-	</button>
-</article>
-
-
-<img class="main-content__photo" src="img/content-jpeg/_MG_3223.jpg" alt="фото логотипа и расписание">
-</article>
+    <figure class="main__photo-container">
+	<img class="main__photo" src="img/content-jpeg/_MG_3223.jpg" alt="фото логотипа и расписание">
+	</figure>
+</main>
 </body>
 </html>
