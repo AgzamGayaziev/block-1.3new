@@ -209,7 +209,7 @@
     .navigation__list--menu::after{
         display: none;
     }
-    .navigation__list--menu .navigation__item::after{
+    .navigation__list--menu .navigation__item:first-child::after{
         content: url("img/divider/divider.svg");
         margin: 5px 20px 0 20px;
     }
