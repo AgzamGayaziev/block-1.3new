@@ -110,13 +110,13 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-.title{
+.main__title{
 	padding-left: 16px;
 	font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
 }
-.title::before{
+.main__title::before{
    content:url("img/heading-design/highlight.svg");
     position: absolute;
     bottom: 0;
@@ -305,12 +305,12 @@
     display:block;
         margin-right: 8px;
 }
-.title{
+.main__title{
 
     position: absolute;
     top:40px;
 }
-.title::before{
+.main__title::before{
     position: absolute;
     bottom: 0;
     top:0;
