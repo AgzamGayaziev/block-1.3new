@@ -7,107 +7,93 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="body">
-<header>
- <nav class="navigation">
-	 <ul class="navigation__list">
-	   <li class="navigation__item">
-		 <ul class="navigation__menu">
+<header class="header">
+ <nav class="header__navigation navigation">
+	 <ul class="navigation__list navigation__list--menu">
 		 <li class="navigation__item">
-			 <button class="navigation__button">
+			 <button class="navigation__button navigation__button--menu">
 				 <img src="img/button-other/burger.svg" class="menu-navigation__pic-other" alt="другое">
 			 </button>
 		 </li>
-		 </ul>
-	   </li>
+	 </ul>
+	 <ul class="navigation__list navigation__list--logo">
 		 <li class="navigation__item">
-			<ul class="navigation__logo">
-		 		<li class="navigation__item">
-					<link href="#" class="menu-navigation__logo">
-						<img src="img/logo/Group.svg" class="menu-navigation__pic-logo" alt="логотип компании">
-					</link>
-		 		</li>
-			</ul>
+			 <a href="#" class="navigation__logo">
+			 	<img src="img/logo/Group.svg" class="navigation__pic-logo" alt="логотип компании">
+			 </a>
 		 </li>
-		 <li class="navigation__item navigation__item_feedback-margin-left">
-			<ul class="navigation__feedback">
-		 		<li class="navigation__item">
-					<a href="tel:+1234567890" class="menu-navigation__button-call ">
-						<img src="img/call-button/call.svg" class="menu-navigation__pic-call" alt="другое">
-					</a>
-				</li>
-
-		 		<li class="navigation__item">
-					<a href="mailto:somemail@gmail.com" class="menu-navigation__button-mail ">
-						<img src="img/chat-button/chat.svg" class="menu-navigation__pic-mail" alt="другое">
-					</a>
-		 		</li>
-
-		 		<li class="navigation__item">
-					<a href="" class="menu-navigation__button-profile ">
-						<img src="img/profile-button/profile.svg" class="menu-navigation__pic-profile" alt="другое">
-					</a>
-		 		</li>
-			</ul>
+	 </ul>
+	 <ul class="navigation__list navigation__list--feedback">
+		 <li class="navigation__item">
+			 <a href="tel:+1234567890" class="navigation__link navigation__link--call ">
+				 <img src="img/call-button/call.svg" class="navigation__pic-call" alt="другое">
+			 </a>
 		 </li>
-		 <li class="navigation__item navigation__item_support-margin-left">
-			 <ul class="navigation__support">
-		 		<li class="navigation__item">
-					<span class="navigation__name-button">Оставить заявку</span>
-					<button class="navigation__button">
-						<img src="img/kit-button/repair.svg" class="menu-navigation__pic-kit" alt="инструменты">
-					</button>
-		 		</li>
 
-			 	<li class="navigation__item">
-					<span class="navigation__name-button">Статус ремонта</span>
-					<button class="navigation__button">
-						<img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-search" alt="поиск">
-					</button>
-	     		</li>
-			 </ul>
+		 <li class="navigation__item">
+			 <a href="mailto:somemail@gmail.com" class="navigation__link navigation__link--mail ">
+				 <img src="img/chat-button/chat.svg" class="navigation__pic-mail" alt="другое">
+			 </a>
+		 </li>
+		 <li class="navigation__item">
+			 <a href="" class="navigation__link navigation__link--profile ">
+				 <img src="img/profile-button/profile.svg" class="navigation__pic-profile" alt="другое">
+			 </a>
+		 </li>
+	 </ul>
+	 <ul class="navigation__list navigation__list--support">
+		 <li class="navigation__item">
+			 <span class="navigation__name-button">Оставить заявку</span>
+			 <button class="navigation__button navigation__button--repair">
+				 <img src="img/kit-button/repair.svg" class="menu-navigation__pic-repair" alt="инструменты">
+			 </button>
+		 </li>
+		 <li class="navigation__item">
+			 <span class="navigation__name-button">Статус ремонта</span>
+			 <button class="navigation__button navigation__button--checkstatus">
+				 <img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-checkstatus" alt="поиск">
+			 </button>
 		 </li>
 	 </ul>
  </nav>
 </header>
 <main class="main">
-	<div class="title">
-		<h1 class="title__services">Услуги и сервисы</h1>
-	</div>
+		<h1 class="title">Услуги и сервисы</h1>
 
-	<div class="main__navigation">
+	<nav class="main__navigation navigation-content">
 		<ul class="main__navigation-list">
-			<li class="navigation__item">
-				<a href="#" class="select__button" autofocus>
-					<span class="select__part">Ремонтные устройства</span>
+			<li class="navigation-content__item">
+				<a href="#" class="navigation-content__link" autofocus>
+					Ремонтные устройства
 				</a>
 			</li>
-			<li class="navigation__item">
-				<a href="#" class="select__button">
-					<span class="select__part">Дополнительные услуги</span>
+			<li class="navigation-content__item">
+				<a href="#" class="navigation-content__link">
+					Дополнительные услуги
 				</a>
 			</li>
-			<li class="navigation__item">
-				<a href="#" class="select__button">
-					<span class="select__part">Адреса сервисных центров</span>
+			<li class="navigation-content__item">
+				<a href="#" class="navigation-content__link">
+					Адреса сервисных центров
 				</a>
 			</li>
-			<li class="navigation__item">
-				<a href="#" class="select__button">
-					<span class="select__part">Цены на услуги</span>
+			<li class="navigation-content__item">
+				<a href="#" class="navigation-content__link">
+					Цены на услуги
 				</a>
 			</li>
-			<li class="navigation__item">
-				<a href="#" class="select__button">
-					<span class="select__part">Специальные цены</span>
+			<li class="navigation-content__item">
+				<a href="#" class="navigation-content__link">
+					Специальные цены
 				</a>
 			</li>
-			<li class="navigation__item">
-				<a href="#" class="select__button">
-					<span class="select__part">Отзывы</span>
+			<li class="navigation-content__item">
+				<a href="#" class="navigation-content__link">
+					Отзывы
 				</a>
 			</li>
 		</ul>
-	</div>
+	</nav>
 	<article class="main-content__discription">
 		<section class="main-content__text-discription">
 			<p class="main-content__paragraph1">
@@ -122,15 +108,16 @@
 				в свою очередь, советуют нас родным и близким.
 			</p>
 		</section>
-		<button class="main-content__button-more">
-			<img src="img/read-more/icon.svg" alt="">
-			<span class="main-content__read-more">Читать далее</span>
+		<button class="read-more">
+			Читать далее
 		</button>
+
+		<figure class="main__photo-container">
+			<img class="main__photo" src="img/content-jpeg/_MG_3223.jpg" alt="фото логотипа и расписание">
+		</figure>
 	</article>
 
-    <figure class="main__photo-container">
-	<img class="main__photo" src="img/content-jpeg/_MG_3223.jpg" alt="фото логотипа и расписание">
-	</figure>
+
 </main>
 </body>
 </html>
