@@ -61,7 +61,7 @@
     flex-wrap:nowrap;
     align-items: center;
     border-bottom: 1px solid #D9FFF5;
-    padding:18px 0 18px 0 ;
+    padding:18px 16px 18px 16px ;
 }
 .navigation__list{
     padding: 0;
@@ -70,19 +70,16 @@
 .navigation__item{
     list-style-type: none;
 }
-.navigation__button--menu{
-    margin-left: 16px;
-}
-.navigation__logo{
-    margin-left: 16px;
-}
-.navigation__list--logo{
+.navigation__list--menu{
     display: flex;
+    align-items: center;
 }
-.navigation__list--logo::after{
+.logo{
+    margin-left: 16px;
+}
+.navigation__list--menu::after{
     content: url("img/divider/divider.svg");
     margin-left: 16px;
-    margin-top: 10px;
 }
 .navigation__list--feedback{
     display: none;
@@ -93,11 +90,9 @@
     flex-direction: row;
     margin-left: auto;
 }
-.navigation__button--repair{
-    margin-right: 16px;
-}
-.navigation__button--checkstatus{
-    margin-right: 16px;
+
+.navigation__list--support .navigation__item:first-child{
+ margin-right: 16px;
 }
 
 .navigation__button{
@@ -133,7 +128,7 @@
     width: 100%;
     overflow: scroll;
 }
-.main__navigation-list{
+.navigation-content__list{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -142,7 +137,7 @@
 }
 .navigation-content__item{
     list-style-type: none;
-    padding:10px 0 24px 16px;
+    margin:10px 0 24px 16px;
 }
 .navigation-content__link{
     text-decoration:none;
@@ -160,7 +155,7 @@
     background-color: white;
     outline: 0;
 }
-.main-content__discription{
+.main__article{
     width: 100%;
     font-size: 14px;
     line-height: 18px;
@@ -168,15 +163,16 @@
     display: flex;
     flex-direction: column;
 }
-.main-content__text-discription{
+.article__content{
     padding: 0 16px 0 16px;
 }
 .main-content__paragraph1{
     margin-bottom: 10px;
 }
-.main-content__paragraph2{
+.article__content-text:nth-child(2){
     display:none;
 }
+
 .read-more {
     width: 150px;
     background-color: white;
@@ -209,15 +205,16 @@
     .navigation__list--menu{
         display: flex;
     }
+
     .navigation__list--menu::after{
+        display: none;
+    }
+    .navigation__list--menu .navigation__item::after{
         content: url("img/divider/divider.svg");
         margin: 5px 20px 0 20px;
     }
-    .navigation__logo{
-        margin:0;
-    }
-    .navigation__list--logo::after{
-        display: none;
+    .logo{
+        margin: 0;
     }
     .navigation__list--feedback{
         display: flex;
@@ -230,10 +227,8 @@
         content: url("img/divider/divider.svg");
         margin: 5px 20px 0 20px;
     }
-    .navigation__link--mail{
-        margin-left: 16px;
-    }
-    .navigation__link--profile{
+    .navigation__list--feedback .navigation__item:nth-child(2),
+    .navigation__list--feedback .navigation__item:nth-child(3){
         margin-left: 16px;
     }
     .main{
@@ -242,23 +237,26 @@
         flex-wrap: wrap;
     }
 
-    .main-content__discription{
+    .main__article{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .main-content__text-discription{
+    .article__content{
         margin:0;
         padding:0 20px 0 24px;
         width:40%;
-        height: 200px;
         font-family: TT Lakes;
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2px;
         overflow: hidden;
     }
-    .main-content__paragraph2 {
+    .article__content-inner{
+        height: 200px;
+        overflow: hidden;
+    }
+    .article__content-text:nth-child(2) {
         display: block;
        margin-top: 45px;
 
@@ -269,9 +267,8 @@
         margin-left: auto;
     }
     .read-more {
-        position: absolute;
-        bottom: 70px;
-        left: 15px;
+        margin-top: 10px;
+        margin-left: 0;
         font-size: 16px;
         line-height: 24px;
     }
@@ -321,28 +318,27 @@
     .main__navigation{
         overflow: hidden;
     }
-    .main__navigation-list{
+    .navigation-content__list{
         flex-wrap: wrap;
     }
-.main-content__discription{
+.main__article{
     margin-left: 34px;
 
 }
-.main-content__paragraph2{
+.article__content-text:nth-child(2) {
     margin-top: 20px;
 }
-.main-content__text-discription{
+.article__content{
     width: 45%;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
     padding: 0;
-    height: 180px;
 }
-.read-more{
-  position: absolute;
-    bottom: 85px;
+.article__content-inner{
+        max-height: 180px;
 }
+
 .main__photo-container{
     margin-top: 0;
     margin-right:28px ;

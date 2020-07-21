@@ -12,32 +12,30 @@
 	 <ul class="navigation__list navigation__list--menu">
 		 <li class="navigation__item">
 			 <button class="navigation__button navigation__button--menu">
-				 <img src="img/button-other/burger.svg" class="menu-navigation__pic-other" alt="другое">
+				 <img src="img/button-other/burger.svg" class="menu-navigation__pic-other" alt="меню">
 			 </button>
 		 </li>
-	 </ul>
-	 <ul class="navigation__list navigation__list--logo">
-		 <li class="navigation__item">
-			 <a href="#" class="navigation__logo">
-			 	<img src="img/logo/Group.svg" class="navigation__pic-logo" alt="логотип компании">
-			 </a>
-		 </li>
+		 <div class="logo">
+		 <a href="#" class="logo__button">
+			 <img src="img/logo/Group.svg" class="logo__pic" alt="логотип компании">
+		 </a>
+		 </div>
 	 </ul>
 	 <ul class="navigation__list navigation__list--feedback">
 		 <li class="navigation__item">
-			 <a href="tel:+1234567890" class="navigation__link navigation__link--call ">
-				 <img src="img/call-button/call.svg" class="navigation__pic-call" alt="другое">
+			 <a href="tel:+1234567890" class="navigation__button navigation__button--call ">
+				 <img src="img/call-button/call.svg" class="navigation__pic-call" alt="позвонить">
 			 </a>
 		 </li>
 
 		 <li class="navigation__item">
-			 <a href="mailto:somemail@gmail.com" class="navigation__link navigation__link--mail ">
-				 <img src="img/chat-button/chat.svg" class="navigation__pic-mail" alt="другое">
+			 <a href="mailto:somemail@gmail.com" class="navigation__button navigation__button--mail ">
+				 <img src="img/chat-button/chat.svg" class="navigation__pic-mail" alt="почта">
 			 </a>
 		 </li>
 		 <li class="navigation__item">
-			 <a href="" class="navigation__link navigation__link--profile ">
-				 <img src="img/profile-button/profile.svg" class="navigation__pic-profile" alt="другое">
+			 <a href="" class="navigation__button navigation__button--profile ">
+				 <img src="img/profile-button/profile.svg" class="navigation__pic-profile" alt="профиль">
 			 </a>
 		 </li>
 	 </ul>
@@ -45,23 +43,23 @@
 		 <li class="navigation__item">
 			 <span class="navigation__name-button">Оставить заявку</span>
 			 <button class="navigation__button navigation__button--repair">
-				 <img src="img/kit-button/repair.svg" class="menu-navigation__pic-repair" alt="инструменты">
+				 <img src="img/kit-button/repair.svg" class="menu-navigation__pic-repair" alt="Оставить заявку">
 			 </button>
 		 </li>
 		 <li class="navigation__item">
 			 <span class="navigation__name-button">Статус ремонта</span>
 			 <button class="navigation__button navigation__button--checkstatus">
-				 <img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-checkstatus" alt="поиск">
+				 <img src="img/search-button/checkstatus.svg" class="menu-navigation__pic-checkstatus" alt="Статус ремонта">
 			 </button>
 		 </li>
 	 </ul>
  </nav>
 </header>
-<main class="main">
+<main class="main main-title">
 		<h1 class="title">Услуги и сервисы</h1>
 
 	<nav class="main__navigation navigation-content">
-		<ul class="main__navigation-list">
+		<ul class="navigation-content__list">
 			<li class="navigation-content__item">
 				<a href="#" class="navigation-content__link" autofocus>
 					Ремонтные устройства
@@ -94,24 +92,25 @@
 			</li>
 		</ul>
 	</nav>
-	<article class="main-content__discription">
-		<section class="main-content__text-discription">
-			<p class="main-content__paragraph1">
-				Мы являемся авторизованным
-				сервисным центром по ремонту техники
-				Dell. Только у нас вы можете
-				отремонтировать свой ноутбук Dell с
-				официальной гарантией производителя.
-			</p>
-			<p class="main-content__paragraph2 ">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-				, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
-				в свою очередь, советуют нас родным и близким.
-			</p>
-		</section>
-		<button class="read-more">
+	<article class="article main__article">
+		<section class="article__content">
+			<div class="article__content-inner">
+				<p class="article__content-text">
+					Мы являемся авторизованным
+					сервисным центром по ремонту техники
+					Dell. Только у нас вы можете
+					отремонтировать свой ноутбук Dell с
+					официальной гарантией производителя.
+				</p>
+				<p class="article__content-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+					, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
+					в свою очередь, советуют нас родным и близким.
+				</p>
+			</div>
+			<button class="read-more">
 			Читать далее
-		</button>
-
+			</button>
+		</section>
 		<figure class="main__photo-container">
 			<img class="main__photo" src="img/content-jpeg/_MG_3223.jpg" alt="фото логотипа и расписание">
 		</figure>
